@@ -46,6 +46,12 @@ export default function Header({}: Props) {
             </Link>
             <Link
               className='md:h-full flex items-center md:justify-center md:w-20 font-semibold hover:text-green-500 py-2 md:py-0 justify-start h-auto w-full md:px-0 px-4 text-white md:text-black'
+              href='#partner'
+            >
+              Partner
+            </Link>
+            <Link
+              className='md:h-full flex items-center md:justify-center md:w-20 font-semibold hover:text-green-500 py-2 md:py-0 justify-start h-auto w-full md:px-0 px-4 text-white md:text-black'
               href='#contact'
             >
               Contact

@@ -9,10 +9,13 @@ import IconDating from "@/components/icons/IconDating";
 import IconESport from "@/components/icons/IconESport";
 import IconGaming from "@/components/icons/IconGaming";
 import IconOthers from "@/components/icons/IconOthers";
+import IconPartner from "@/components/icons/IconPartner";
 import IconShieldCheck from "@/components/icons/IconShieldCheck";
+import IconTelegram from "@/components/icons/IconTelegram";
 import IconWithdrawMoney from "@/components/icons/IconWithdrawMoney";
 import SectionTitle from "@/components/layouts/SectionTitle";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -28,7 +31,8 @@ export default function Home() {
               </div>
               <div>
                 <h1 className='mb-4 text-[40px md:text-[48px]'>
-                  The Smart Way for Online Payment Solution
+                  The Smart Way for Online{" "}
+                  <span className='text-green-500'>Payment Solution</span>
                 </h1>
                 <p>
                   TakaPay24 is the only payments solution in Bangladesh that
@@ -102,7 +106,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='py-20 bg-slate-900'>
+      <section id='partner' className='py-20 bg-slate-900'>
         <div className='container'>
           <div className='flex md:flex-row flex-col items-center md:justify-between justify-center'>
             <div className='flex-1 md:pr-20 text-center md:text-left mb-10 md:mb-0'>
@@ -122,6 +126,38 @@ export default function Home() {
                 alt='logos'
                 src='/images/all-logos.png'
               />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='bg-green-100'>
+        <div className='container'>
+          <div className='flex md:flex-row flex-col items-center md:justify-between justify-center py-8 text-center md:text-left'>
+            <div className='flex md:flex-row flex-col justify-center items-center flex-1'>
+              <div className='mb-4 md:mb-0'>
+                <IconPartner className='md:w-28 md:h-28 w-40 h-40' />
+              </div>
+              <div className='ml-4'>
+                <h2 className='text-3xl text-black'>
+                  Join Our Partner Program
+                </h2>
+                <p>
+                  Become a Payment Partner of TakaPay24 & Earn Extra Profit From
+                  Your Existing Payment Wallets
+                </p>
+              </div>
+            </div>
+            <div className='flex-1 md:flex md:justify-end mt-8 md:mt-0 w-full md:w-auto'>
+              <Link
+                href='https://t.me/sohan423156'
+                className='flex items-center bg-[#34ace1] py-2 px-3 rounded-lg md:max-w-60 w-full'
+              >
+                <IconTelegram className='fill-white w-14 h-14' />
+                <div className='ml-3 text-left'>
+                  <h2 className=' text-white'>Send Message</h2>
+                  <h3 className='text-sm leading-5 text-white'>@sohan423156</h3>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -247,45 +283,26 @@ for Any Industry, Service and Website'
       </section>
       <section id='contact' className='bg-white py-20'>
         <div className='container'>
-          <SectionTitle
-            desc="Have questions or need a demo? Let's start a business meeting
-              virtually to discuss about your needs."
-            title="Let's Talk"
-          />
+          <div className='flex md:flex-row flex-col items-center justify-between'>
+            <div className='flex-1 text-center md:text-left mb-10 md:mb-0'>
+              <h1>
+                Let's <span className='text-green-500'>Talk</span>
+              </h1>
+              <h2 className='text-gray-600'>
+                Have questions or need API Services?
+              </h2>
+            </div>
 
-          <div className='flex md:flex-row flex-col md:items-center'>
-            <div className='flex-1'>
-              <Image
-                height={300}
-                width={450}
-                alt='contact'
-                src='/images/contact.png'
-              />
-            </div>
-            <div className='flex-1 mt-8 md:mt-0'>
-              <div className='mb-4 w-full'>
-                {" "}
-                <input
-                  placeholder='Your Email'
-                  className='w-full'
-                  type='text'
-                />
+            <Link
+              href='https://t.me/sohan423156'
+              className='flex items-center bg-[#34ace1] py-2 px-3 rounded-lg w-full md:w-auto'
+            >
+              <IconTelegram className='fill-white w-14 h-14' />
+              <div className='ml-3'>
+                <h2 className=' text-white'>Send Message</h2>
+                <h3 className='text-sm leading-5 text-white'>@sohan423156</h3>
               </div>
-              <div className='mb-4 w-full'>
-                {" "}
-                <input className='w-full' placeholder='Subject' type='text' />
-              </div>
-              <div className='w-full'>
-                <textarea
-                  rows={5}
-                  className='w-full mb-4'
-                  placeholder='Message'
-                ></textarea>
-              </div>
-              <div className='w-full'>
-                <button className='btn btn-primary w-full'>Send Message</button>
-              </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
