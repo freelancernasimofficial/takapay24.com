@@ -8,9 +8,9 @@ type Props = {};
 
 export default function Footer({}: Props) {
   return (
-    <footer className='bg-slate-900 text-white h-96 flex flex-col justify-between pt-16'>
+    <footer className='bg-slate-900 text-white h-full md:h-96 flex flex-col justify-between pt-16'>
       <div className='container'>
-        <div className='flex justify-between'>
+        <div className='flex md:flex-row md:justify-between flex-col'>
           <div className='flex-1'>
             <Image
               width={150}
@@ -24,7 +24,7 @@ export default function Footer({}: Props) {
               product suite.
             </p>
           </div>
-          <div className='flex-1 pl-16'>
+          <div className='flex-1 md:pl-16 mt-8 md:mt-0'>
             <h2 className='mb-2'>Legal</h2>
             <Link
               className='block w-full font-medium py-2 hover:text-green-600'
@@ -45,7 +45,7 @@ export default function Footer({}: Props) {
               Refund Policy
             </Link>
           </div>
-          <div className='flex-1 pl-10'>
+          <div className='flex-1 md:pl-10 mt-8 md:mt-0'>
             <h2 className='mb-2'>Follow Us</h2>
             <Link
               className='block w-full font-medium py-2 hover:text-green-600'
@@ -66,7 +66,7 @@ export default function Footer({}: Props) {
               Twitter
             </Link>
           </div>
-          <div className='flex-1'>
+          <div className='flex-1 my-8 md:my-0'>
             <h2 className='mb-4'>Get In Touch</h2>
             <div className='flex items-center mb-4'>
               <div>
