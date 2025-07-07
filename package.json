@@ -11,7 +11,7 @@
     "pm2": "pm2 start npm --name 'takapay24' -- start"
   },
   "dependencies": {
-    "next": "15.1.2",
+    "next": "^15.3.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sharp": "^0.33.5"
