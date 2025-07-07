@@ -1,0 +1,35 @@
+version: 2
+updates:
+  # Enable version updates for npm
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "freelancernasimofficial"
+    assignees:
+      - "freelancernasimofficial"
+    commit-message:
+      prefix: "🔒 Security"
+      include: "scope"
+    # Group security updates
+    groups:
+      security-updates:
+        patterns:
+          - "*"
+        update-types:
+          - "security"
+    # Auto-merge security patches
+    allow:
+      - dependency-type: "all"
+        update-type: "security"
+
+  # Enable version updates for GitHub Actions (if any)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 2
